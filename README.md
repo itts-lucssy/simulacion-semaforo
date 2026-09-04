@@ -4,11 +4,19 @@ El sistema modela el comportamiento cíclico del semáforo (rojo → verde → a
 
 ¿Cómo funciona el programa?
 Entrada de datos: al ejecutarse, el programa pregunta al usuario los tiempos de cada fase y los datos de llegada de vehículos. Si el usuario no escribe nada y solo presiona Enter, se usan los valores observados en campo.
-Simulación: usando la librería SimPy, se crean dos procesos que corren en paralelo:
+
+Simulación: usando la librería SimPy, se crean dos procesos que corren en paralelo
 El semáforo, que cicla entre rojo, verde y amarillo.
 El generador de vehículos, que hace llegar autos a la intersección en tiempos aleatorios (distribución exponencial), simulando el tráfico real.
+
 Salida: al terminar la simulación, el programa muestra:
 Total de vehículos generados y cuántos lograron cruzar
 Tiempo de espera promedio y máximo por vehículo
 Longitud máxima que alcanzó la fila
 Vehículos que cruzaron en cada ciclo de verde
+
+Usamos los datos de campo que son:
+Rojo (nuestro sentido)= 47 segundos
+Verde (nuestro sentido)=20 segundos
+Verde transversal (grupo 1)=19 segundos
+Verde transversal (grupo 2)=21 segundos
